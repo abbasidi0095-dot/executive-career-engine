@@ -3,18 +3,18 @@ import { ArrowRight, Sparkle, Robot, FilePdf, ShieldCheck, ArrowSquareOut, Chart
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0A0A0B] text-[#F3EFEA] flex flex-col justify-between relative overflow-hidden font-sans">
+    <div className="min-h-screen bg-background text-foreground flex flex-col justify-between relative overflow-hidden font-sans dark-theme">
       
       {/* Background Graphic Blobs */}
-      <div className="absolute top-1/4 left-1/4 w-[40vw] h-[45vw] rounded-full bg-[#D4AF37]/5 blur-[120px] pointer-events-none -z-10 animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-[40vw] h-[45vw] rounded-full bg-[#D4AF37]/5 blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute top-1/4 left-1/4 w-[40vw] h-[45vw] rounded-full bg-accent-muted blur-[120px] pointer-events-none -z-10 animate-pulse" />
+      <div className="absolute bottom-1/4 right-1/4 w-[40vw] h-[45vw] rounded-full bg-accent-muted blur-[120px] pointer-events-none -z-10" />
       <div className="grain-overlay" />
 
       {/* Header Bar */}
       <header className="px-6 md:px-16 py-6 border-b border-card-border flex items-center justify-between z-10 max-w-7xl mx-auto w-full">
         <div className="flex items-center gap-2">
           <span className="font-serif italic text-xl text-accent font-semibold">CareerEnvoy</span>
-          <span className="text-[9px] font-mono uppercase tracking-widest text-[#D4AF37] bg-[#D4AF37]/10 px-2 py-0.5 rounded-md border border-[#D4AF37]/20">
+          <span className="text-[9px] font-mono uppercase tracking-widest text-accent bg-accent-muted px-2 py-0.5 rounded-md border border-accent/20">
             Engine v1.0
           </span>
         </div>
@@ -146,8 +146,8 @@ export default function Home() {
                 No local developer setup, no complicated GitHub hosting loops, and no monthly fees. Simply enter your credentials, document your metrics via our interactive onboarding portal, and go live on your custom subdomain in seconds.
               </p>
               
-              <div className="pt-4 flex items-center gap-4 text-xs font-mono text-[#D4AF37]">
-                <span className="flex items-center gap-1.5 bg-[#D4AF37]/5 border border-[#D4AF37]/20 px-3 py-1 rounded-full">
+              <div className="pt-4 flex items-center gap-4 text-xs font-mono text-accent">
+                <span className="flex items-center gap-1.5 bg-accent-muted border border-accent/20 px-3 py-1 rounded-full">
                   <ShieldCheck size={14} />
                   Safe & Encrypted
                 </span>

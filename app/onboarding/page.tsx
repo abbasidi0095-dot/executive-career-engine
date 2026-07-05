@@ -159,7 +159,7 @@ export default function OnboardingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0A0A0B] text-[#F3EFEA] flex flex-col justify-between font-sans">
+    <div className="min-h-screen bg-background text-foreground flex flex-col justify-between font-sans dark-theme">
       <div className="grain-overlay" />
 
       {/* Navigation Header */}
@@ -686,7 +686,7 @@ export default function OnboardingPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-mono uppercase tracking-widest font-bold bg-accent text-background hover:bg-[#C5A880] transition-all cursor-pointer disabled:opacity-50"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs font-mono uppercase tracking-widest font-bold bg-accent text-background hover:bg-accent/80 transition-all cursor-pointer disabled:opacity-50"
             >
               {isSubmitting ? (
                 <>Launching Engine...</>

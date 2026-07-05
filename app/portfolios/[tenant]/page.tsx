@@ -45,14 +45,14 @@ export default async function PortfolioPage({ params }: PortfolioPageProps) {
   // If subdomain is not yet registered, serve an elite, high-converting invite page
   if (!profile) {
     return (
-      <div className="min-h-screen bg-[#0A0A0B] text-[#F3EFEA] flex flex-col justify-center items-center px-6 py-12 relative overflow-hidden font-sans">
+      <div className="min-h-screen bg-background text-foreground flex flex-col justify-center items-center px-6 py-12 relative overflow-hidden font-sans dark-theme">
         {/* Abstract design layout matching our theme */}
-        <div className="absolute top-1/4 left-1/4 w-[35vw] h-[35vw] rounded-full bg-[#D4AF37]/5 blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-1/4 right-1/4 w-[35vw] h-[35vw] rounded-full bg-[#D4AF37]/5 blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-[35vw] h-[35vw] rounded-full bg-accent-muted blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-1/4 right-1/4 w-[35vw] h-[35vw] rounded-full bg-accent-muted blur-[120px] pointer-events-none" />
         <div className="grain-overlay" />
 
         <div className="max-w-2xl text-center space-y-8 z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono tracking-wider bg-[#D4AF37]/10 border border-[#D4AF37]/20 text-[#D4AF37]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono tracking-wider bg-accent-muted border border-accent/20 text-accent">
             <Warning size={14} />
             Subdomain Available
           </div>
@@ -61,7 +61,7 @@ export default async function PortfolioPage({ params }: PortfolioPageProps) {
             <h1 className="text-4xl sm:text-5xl font-serif italic text-accent font-medium leading-none">
               {tenant}.localhost
             </h1>
-            <p className="text-xl sm:text-2xl font-light tracking-tight max-w-[20ch] mx-auto text-[#FAF8F5]/80">
+            <p className="text-xl sm:text-2xl font-light tracking-tight max-w-[20ch] mx-auto text-foreground/80">
               This cinematic executive subdomain hasn't been claimed yet.
             </p>
           </div>
